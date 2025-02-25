@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // split()方法用来切割字符串，不改变原字符串，返回一个新数组。
+    // split("分隔符",[返回的数组元素个数])
+
+
+    const str = "hello world"
+    const arr = str.split("")    //没有规定分隔符，将字符串一个一个拆分
+    const arr1 = str.split(" ",1)  //以空格分隔，返回的数组元素个数为1
+    console.log(arr)  //打印['h', 'e', 'l', 'l','o', ' ', 'w', 'o','r', 'l', 'd']
+    console.log(arr1) //打印[ 'hello' ]
+
+    const num = "111022203330444"
+    const arr2 = num.split("0")  //用0来进行分割
+    console.log(arr2)  //[ '111', '222', '333', '444' ]
+
+
+  </script>
+</body>
+
+</html>

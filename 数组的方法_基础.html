@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var list = [1, 2, 3, 4, 5, 6, 'hello', 6, 6, 7, 9]
+
+    // push: 往数组的最后一个位置追加元素
+    // list.push(7)
+    // console.log(list)
+
+    // unshift: 往数组的第一个位置追加元素
+    // list.unshift(0)
+    // console.log(list)
+
+    // pop: 移除数组中的最后一个元素，并返回这个被删除的元素
+    // var result = list.pop()
+    // console.log(result)
+    // console.log(list)
+
+    // shift: 移除数组中的第一个元素，并返回这个被删除的元素
+    // var result = list.shift()
+    // console.log(result)
+    // console.log(list)
+
+    // splice: 移除数组某个位置的元素，可以移除多个，并返回这个被删除的元素
+    // 参数1：要开始删除的索引位置
+    // 参数2：表示要删除几个
+    // 参数3往后: 表示要替补的元素， 可以是多个
+    var result = list.splice(1, 2, 666, 888)
+    console.log(result) // 返回 [2, 3]
+    console.log(list)  // 会对原始数组造成影响，返回 [1, 666, 888, 4, 5, 6, 'hello', 6, 6, 7, 9]
+
+    // slice: 切割数组，返回新数组，不会对原始数组造成影响
+    // 参数1：切割的起始位置（包含该元素）
+    // 参数2：切割的结束位置（不包含该元素）
+    // 如果只传一个参数，表示从这个位置截到最后一个元素
+    // var result = list.slice(2,4)  // 返回 [3, 4]
+    //  var result = list.slice(2)  // 返回 [3, 4, 5, 6, 'hello', 6, 6, 7, 9]
+    // console.log(result)
+    // console.log(list)
+
+    // concat: 实现数组拼接,返回新数组，不影响原数组
+    // var result = list.concat(7, 8, 9)
+    // var result = list.concat([7, 8, 9])
+    // console.log(result)
+    // console.log(list)
+
+    // reverse: 数组反转, 返回新数组，会影响原数组
+    // var result = list.reverse()
+    // console.log(result)
+    // console.log(list)
+
+    // sort: 数组排序, 返回新数组，会影响原数组
+    // var result = list.sort()
+    // console.log(result)
+    // console.log(list)
+
+    // join: 把数组用字符串拼接, 返回拼接后的字符串
+    // var result = list.join('-')
+    // console.log(result)
+    // console.log(list)
+
+    // toString： 把数组转成字符串
+    // var result = list.toString()
+    // console.log(result)
+
+    // indexOf: 查询某个元素的索引位置， 返回第一个出现的元素的索引
+    // 如果元素不存在，返回-1， 可以通过此方法判断元素存不存在
+    // var result = list.indexOf(6)
+    // console.log(result)
+
+    // lastIndexOf: 查询某个元素的索引位置， 返回最后一个出现的元素的索引
+    // var result = list.lastIndexOf(6)
+    // console.log(result)
+
+    // includes: 判断某个元素是否存在
+    // var result = list.includes(33)
+    // console.log(result)
+
+  </script>
+</body>
+
+</html>

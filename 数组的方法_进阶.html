@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var list = [
+      {
+        id: 1,
+        name: '小明',
+        gender: '男',
+        score: 100
+      },
+      {
+        id: 2,
+        name: '小磊',
+        gender: '男',
+        score: 59
+      },
+      {
+        id: 3,
+        name: '小红',
+        gender: '女',
+        score: 89
+      },
+      {
+        id: 4,
+        name: '小丽',
+        gender: '女',
+        score: 90
+      },
+      {
+        id: 5,
+        name: '小武',
+        gender: '男',
+        score: 66
+      }
+    ]
+
+    // forEach: 遍历数组，会遍历到数组的每个元素
+    // list.forEach(item => {
+    //   console.log(item.id)
+    // })
+
+    // filter: 过滤数组，遍历所有元素，会根据某个条件对数组进行过滤，最终返回一个新数组，不会影响原数组
+    // var result = list.filter(item => {
+    //   // if (item.gender === '男') {
+    //   //   return true
+    //   // } else {
+    //   //   return false
+    //   // }
+    //   // return item.gender === '男'
+    //   return item.score >= 60
+    // })
+
+    // console.log(result)
+
+    // map: 根据原数组，遍历所有元素，返回一个新的数组，但是数组元素结构可能会发生变化
+    // 回调函数中返回新数组的每一个元素
+    // var result = list.map(item => {
+    //   return { username: item.name }
+    // })
+    // console.log(result)
+
+    // some: 用于查询数组中是否有符合条件的某个元素，如果有，返回true，没有，就返回false
+    // 遍历的次数不确定，一旦找到符合条件的，就立即返回true，不再遍历
+    // var result = list.some(item => {
+    //   console.log(item.id)
+    //   return item.score < 60
+    // })
+
+    // console.log(result)
+
+    // every: 用于查询数组中是否每一个元素都符合条件，如果都符合，返回true, 如果有不符合的，返回false
+    // 遍历的次数不确定，一旦找到不符合条件的，就立即返回false，不再遍历
+    // var result = list.every(item => {
+    //   console.log(item.id)
+    //   return item.score >= 60
+    // })
+
+    // console.log(result)
+
+    // find: 查找符合条件的某个元素，返回元素对象
+    // 遍历的次数不确定，一旦找到符合条件的，就立即返回该元素对象，中止遍历
+    // var result = list.find(item => {
+    //   console.log(item.id)
+    //   return item.score < 60
+    // })
+    // console.log(result)
+
+    // findIndex: 查找符合条件的某个元素，返回元素的索引
+    // 如果没找着，返回-1
+    // 遍历的次数不确定，一旦找到符合条件的，就立即返回该元素对象的索引，中止遍历
+    // var result = list.findIndex(item => {
+    //   console.log(item.id)
+    //   return item.score < 60
+    // })
+    // console.log(result)
+
+    // sort: 根据对象的某个字段进行排序
+    // 若 a 小于 b，在排序后的数组中 a 应该出现在 b 之前，则返回一个小于 0 的值。
+    // 若 a 等于 b，则返回 0。
+    // 若 a 大于 b，则返回一个大于 0 的值。
+    // var result = list.sort((a, b) => {
+    //   return a.score - b.score
+    // })
+    // console.log(result)
+
+
+
+  </script>
+</body>
+
+</html>
